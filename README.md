@@ -21,7 +21,7 @@ Usage
     
 * Install plugins
 
-    ```vim```
+    ```vim``` (Note: you will get error/warning messages. No worries, just ignore)
     
     In vim, run ```:BundleInstall```
     
