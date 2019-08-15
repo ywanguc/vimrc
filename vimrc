@@ -66,6 +66,8 @@ Bundle 'nono/jquery.vim'
 " Bundle 'nono/vim-handlebars'
 Bundle 'tpope/vim-markdown'
 Bundle 'iamcco/markdown-preview.nvim'
+Bundle 'jceb/vim-orgmode'
+Bundle 'tpope/vim-speeddating' "needed for vim-orgmode
 " Bundle 'fatih/vim-go'
 Bundle 'kien/rainbow_parentheses.vim'
 Bundle 'lervag/vimtex'
