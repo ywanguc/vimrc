@@ -13,7 +13,7 @@ Usage
     
     ```mkdir ~/.vim```
     
-    ```curl -o ~/.vim/vimrc xxxx```
+    ```curl -o ~/.vim/vimrc https://raw.githubusercontent.com/ywanguc/vimrc/master/vimrc```
     
     ```ln -s ~/.vim/vimrc ~/.vimrc```
 
