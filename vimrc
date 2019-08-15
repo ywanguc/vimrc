@@ -1,23 +1,5 @@
 "================================================================================
 " vimrc file - Yong Wang
-"
-" It is based on and modified from Maple's Vim Config
-" (https://github.com/humiaozuzu/dot-vimrc)
-"
-"
-" To install:
-"       cd
-"       mkdir ~/.vim
-"       curl -o ~/.vim/vimrc xxxx
-"       ln -s ~/.vim/vimrc ~/.vimrc
-"       git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
-" Open vim:
-"       vim
-" Install plugins:
-"       :BundleInstall
-" Install tex.snippets (optional: for fast tex editing, from gillescastel/latex-snippets)
-"       mkdir ~/.vim/UltiSnips
-"       curl -o ~/.vim/UltiSnips/tex.snippets https://raw.githubusercontent.com/gillescastel/latex-snippets/master/tex.snippets
 "================================================================================
 
 set nocompatible               " be iMproved
@@ -49,26 +31,20 @@ Bundle 'mileszs/ack.vim'
 Bundle 'kien/ctrlp.vim'
 Bundle 'tpope/vim-fugitive'
 Bundle 'Lokaltog/vim-powerline'
-" Bundle 'scrooloose/syntastic' " check syntax (could slow down vim at saving)
 Bundle 'bronson/vim-trailing-whitespace'
 Bundle 'aben20807/vim-runner'
 Bundle 'sillybun/vim-repl'
 " Other Utils
 Bundle 'nvie/vim-togglemouse'
 " Syntax/Indent for language enhancement
-"Bundle 'digitaltoad/vim-jade'
 Bundle 'othree/html5.vim'
 Bundle 'pangloss/vim-javascript'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'nono/jquery.vim'
-" Bundle 'groenewege/vim-less'
-" Bundle 'wavded/vim-stylus'
-" Bundle 'nono/vim-handlebars'
 Bundle 'tpope/vim-markdown'
 Bundle 'iamcco/markdown-preview.nvim'
 Bundle 'jceb/vim-orgmode'
 Bundle 'tpope/vim-speeddating'
-" Bundle 'fatih/vim-go'
 Bundle 'kien/rainbow_parentheses.vim'
 Bundle 'lervag/vimtex'
 " Color Schemes
@@ -103,14 +79,8 @@ syntax on
 set background=dark
 color gruvbox
 
-" highlight current line
-" au WinLeave * set nocursorline nocursorcolumn
-" au WinEnter * set cursorline cursorcolumn
-" set cursorline cursorcolumn
-
 " search
 set incsearch
-"set highlight 	" conflict with highlight current line
 set ignorecase
 set smartcase
 
@@ -132,7 +102,6 @@ set showcmd                                                       " show typed c
 set title                                                         " show file in titlebar
 set laststatus=2                                                  " use 2 lines for the status bar
 set matchtime=2                                                   " show matching bracket for 0.2 seconds
-" set matchpairs+=<:>                                               " specially for html
 " set relativenumber
 
 " Default Indentation
@@ -141,8 +110,6 @@ set smartindent     " indent when
 set tabstop=4       " tab width
 set softtabstop=4   " backspace
 set shiftwidth=4    " indent width
-" set textwidth=79
-" set smarttab
 set expandtab       " expand tab to space
 
 autocmd FileType php setlocal tabstop=2 shiftwidth=2 softtabstop=2 textwidth=120
@@ -233,26 +200,23 @@ let NERDChristmasTree=0
 let NERDTreeWinSize=30
 let NERDTreeChDirMode=2
 let NERDTreeIgnore=['\~$', '\.pyc$', '\.swp$']
-" let NERDTreeSortOrder=['^__\.py$', '\/$', '*', '\.swp$',  '\~$']
 let NERDTreeShowBookmarks=1
 let NERDTreeWinPos = "right"
 
 " nerdcommenter
 let NERDSpaceDelims=1
-" nmap <D-/> :NERDComToggleComment<cr>
+nmap <C-/> :NERDComToggleComment<cr>
 let NERDCompactSexyComs=1
 
 " ZenCoding
 let g:user_emmet_expandabbr_key='<C-j>'
 
 " powerline
-"let g:Powerline_symbols = 'fancy'
+let g:Powerline_symbols = 'unicode'
 
 " NeoComplCache
 let g:neocomplcache_enable_at_startup=1
 let g:neoComplcache_disableautocomplete=1
-"let g:neocomplcache_enable_underbar_completion = 1
-"let g:neocomplcache_enable_camel_case_completion = 1
 let g:neocomplcache_enable_smart_case=1
 let g:neocomplcache_min_syntax_length = 3
 let g:neocomplcache_lock_buffer_name_pattern = '\*ku\*'
@@ -275,7 +239,6 @@ endif
 let g:neocomplcache_omni_patterns.erlang = '[a-zA-Z]\|:'
 
 " SuperTab
-" let g:SuperTabDefultCompletionType='context'
 let g:SuperTabDefaultCompletionType = '<C-X><C-U>'
 let g:SuperTabRetainCompletionType=2
 
