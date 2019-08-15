@@ -1,5 +1,8 @@
 "================================================================================
 " vimrc file - Yong Wang
+"
+" Tailored for LaTex, Python, C/C++, html/javscript
+" Based on and modified from humiaozuzu/dot-vimrc
 "================================================================================
 
 set nocompatible               " be iMproved
