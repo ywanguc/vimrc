@@ -31,3 +31,8 @@ Usage
     ```mkdir ~/.vim/UltiSnips```
 
     ```curl -o ~/.vim/UltiSnips/tex.snippets https://raw.githubusercontent.com/gillescastel/latex-snippets/master/tex.snippets```
+    
+ 
+ * Install for markdown preview
+ 
+    In vim, run ```:call mkdp#util#install()```
