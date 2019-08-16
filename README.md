@@ -1,5 +1,5 @@
 # vimrc
-My Vim Configuration - it is tailored for LaTex, Python, C/C++ and Org-mode.
+My Vim Configuration - it is tailored for LaTex, Python, C/C++, Markdown, and Org-mode.
 
 Note: This vimrc file is based on and modified from [Maple's Vim Config](https://github.com/humiaozuzu/dot-vimrc)
 
