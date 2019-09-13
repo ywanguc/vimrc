@@ -26,11 +26,11 @@ Usage
     In vim, run ```:BundleInstall```
     
 
-* Install tex.snippets (optional: for fast tex editing, from gillescastel/latex-snippets)
+* Install tex.snippets (optional: for fast tex editing, modified from gillescastel/latex-snippets)
 
     ```mkdir ~/.vim/UltiSnips```
 
-    ```curl -o ~/.vim/UltiSnips/tex.snippets https://raw.githubusercontent.com/gillescastel/latex-snippets/master/tex.snippets```
+    ```curl -o ~/.vim/UltiSnips/tex.snippets https://raw.githubusercontent.com/ywanguc/vimrc/master/tex.snippets```
     
  
  * Complete installation for markdown preview
