@@ -95,6 +95,7 @@ set confirm                                                       " prompt when 
 set backspace=indent,eol,start                                    " More powerful backspacing
 set t_Co=256                                                      " Explicitly tell vim that the terminal has 256 colors "
 set mouse=a                                                       " use mouse in all modes
+set clipboard=unnamed                                             " Mac OS X clipboard sharing
 set report=0                                                      " always report number of lines changed                "
 set nowrap                                                        " dont wrap lines
 set wrap linebreak nolist                                         " wrap lines
@@ -330,7 +331,7 @@ inoremap <C-l> <c-g>u<Esc>[s1z=`]a<c-g>u
 if has("gui_running")
     set go=aAce  " remove toolbar
     "set transparency=30
-    set guifont=Monaco:h13
+    set guifont=Monaco:h15
     set showtabline=2
     set columns=140
     set lines=40
